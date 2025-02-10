@@ -16,7 +16,7 @@ git clone https://github.com/cardoso-m/backend-sendgrid
 ### 2. Install Backend Dependencies
 
 ```bash
-cd backend
+cd backend-sendgrid
 npm install
 ```
 
@@ -33,7 +33,7 @@ touch .env
 DB_HOST='127.0.0.1'
 DB_NAME='sendgrid'
 DB_USER='postgres'
-DB_PORT='3000'
+DB_PORT='3000' || '5432'
 DB_PASS='YOUR_PASSWORD'
 
 ## SendGrid
@@ -45,7 +45,7 @@ SENDGRID_API_KEY='YOUR_API_KEY'
 
 ### 4. Database Setup
 
-- Access **pgAdmin** and create a database called `sendgrid`.
+- Access **pgAdmin** and create a database named `sendgrid`.
 - Fill in the credentials in the `.env` file as shown above.
 
 ### 5. SendGrid Setup
@@ -61,7 +61,6 @@ SENDGRID_API_KEY='YOUR_API_KEY'
 For the backend, run the following commands in the terminal:
 
 ```bash
-cd backend
 npm run migrate
 npm run dev
 ```
@@ -71,7 +70,7 @@ npm run dev
 First, install the dependencies in the frontend directory:
 
 ```bash
-cd frontend
+cd frontend-sendgrid
 npm install
 ```
 
