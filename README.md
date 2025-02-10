@@ -31,9 +31,9 @@ touch .env
 ```bash
 ## Database
 DB_HOST='127.0.0.1'
-DB_NAME='sendgrid'
-DB_USER='postgres'
-DB_PORT='3000' || '5432'
+DB_NAME='YOUR_DATABASE_NAME'
+DB_USER='YOUR_DATABASE_USER'
+DB_PORT='5432'
 DB_PASS='YOUR_PASSWORD'
 
 ## SendGrid
